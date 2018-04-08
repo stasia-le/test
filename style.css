@@ -81,7 +81,7 @@ html, body {
 	height:100%;
 	width:100%;
 	margin:auto;
-	background: url(pics/one.jpg);
+	background: url(one.jpg);
 	display: table;
 	top:0;
 	background-size: cover;
@@ -222,7 +222,7 @@ p {
 	text-align: center;
 	color: white;
 	margin:auto;
-	background: url(pics/one.jpg);
+	background: url(one.jpg);
 	display: table;
 	top:0;
 	background-size: cover;
