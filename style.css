@@ -1,0 +1,273 @@
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+
+/*navbar starts here*/
+
+
+#logo {
+	width: 50px;
+	float: left;
+	z-index:3;
+	position: fixed;
+	margin-left: 1%;
+	margin-top: 0.5%;
+}
+
+.nav {
+	background-color: white;
+	width: 100%;
+	height: auto;
+	margin:0;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 130%;
+	text-decoration: none;
+	text-transform: uppercase;
+	list-style: none;
+	text-align: center;
+	padding: 0px 30px;
+	position: fixed;
+	z-index:1;
+}
+
+.nav li {
+	display: inline-block;
+	padding: 0px 30px;
+	color: #476F5D;
+}
+
+.nav a:visited {
+	text-decoration: none;
+	padding: 0px 30px;
+	color: #476F5D;
+}
+
+.nav a:link {
+	text-decoration: none;
+	padding: 0px 30px;
+	color: #476F5D;
+}
+
+.nav a:active {
+	text-decoration: none;
+	padding: 0px 30px;
+	color: #476F5D;
+}
+
+.nav a:hover {
+	color: gold;
+	text-decoration: none;
+	padding: 20px 30px;
+}
+
+.nav #home {
+	color: white
+	background-color: gold;
+	padding: 20px 30px;
+}
+
+.nav a.activepage {
+	color: gold;
+	text-decoration: none;
+	padding: 20px 30px;
+}
+
+/*navbar ends*/
+
+.intro {
+	height:100%;
+	width:100%;
+	margin:auto;
+	background: url(pics/one.jpg);
+	display: table;
+	top:0;
+	background-size: cover;
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+	}
+
+.content {
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.content h1 {
+	font-family: 'Playfair Display', serif;
+	color: white;
+	font-size: 300%;
+}
+
+/* animation starts */
+
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+/* animation ends */
+
+.btn {
+	border-radius: 9px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 110%;
+	border: solid white 2px;
+	padding: 10px 20px;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: gold;
+}
+
+.btn:hover {
+	background-color: rgba(251, 229, 28, 0.68);
+}
+
+.btn:active {
+	background-color: gold;
+}
+
+
+p {
+	font-size: 120%;
+	font-family: 'Open Sans Condensed', sans-serif;
+	line-height: 180%;
+	text-align: justify;
+	margin: 3%;
+}
+
+.initial {
+	font-family: 'Playfair Display', serif;
+	font-size: 400%;
+	float: left;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	padding-top: 18px;
+	color: #7EB3AF
+}
+
+/*gallery*/
+
+.imagecontainer img {
+	width: 600px;
+	height: 445px;
+	margin: 10px;
+	transition: all 1s;
+}
+
+.imagecontainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.imagecontainer img:hover {
+	opacity: 0.5;
+}
+
+
+/*contact*/
+
+#contact {
+	height:100%;
+	width:100%;
+	text-align: center;
+	color: white;
+	margin:auto;
+	background: url(pics/one.jpg);
+	display: table;
+	top:0;
+	background-size: cover;
+}
+
+.contactheader {
+	margin-top: 150px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+}
+
+.contacttext {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+}
+
+.form-control {
+	width: 600px;
+	background: rgba(25, 27, 23, 0.76);
+	border: none;
+	outline: none;
+	border-bottom: 1px solid white;
+	margin-bottom: 16px;
+	color: white;
+	padding: 7px;
+}
+
+input {
+	height: 20px;
+}
+
+form .submit {
+	height: 40px;
+	width: 100px;
+	border-radius: 9px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	border: solid white 2px;
+	font-size: 110%;
+	padding: auto;
+	color: white;
+	text-transform: uppercase;
+	background-color: gold;
+}
+
+form .submit:hover {
+	cursor: pointer;
+	background-color: rgba(251, 229, 28, 0.68);
+}
